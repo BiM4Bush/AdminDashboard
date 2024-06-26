@@ -4,7 +4,7 @@ using AdminDashboard.Core.Interfaces;
 
 namespace AdminDashboard.Core.Services
 {
-    public class LeaveRequestService : ILeaveRequest
+    public class LeaveRequestService : ILeaveRequestService
     {
         private readonly ApplicationDbContext _context;
 

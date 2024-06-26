@@ -2,7 +2,7 @@
 
 namespace AdminDashboard.Core.Interfaces
 {
-    public interface ILeaveRequest
+    public interface ILeaveRequestService
     {
         Task<IEnumerable<LeaveRequest>> SortLeaveRequestsAsync(string sortBy);
         Task<IEnumerable<LeaveRequest>> FilterLeaveRequestsAsync(string filterBy, string filterValue);
