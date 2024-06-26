@@ -23,7 +23,7 @@ namespace AdminDashboard.Core.Entities.Business
 
         [ForeignKey("PeoplePartner")]
         public int? PeoplePartnerId { get; set; }
-        public Employee PeoplePartner { get; set; }
+        public Employee? PeoplePartner { get; set; }
 
         public decimal OutOfOfficeBalance { get; set; }
 
