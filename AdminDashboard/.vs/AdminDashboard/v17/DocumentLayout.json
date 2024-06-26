@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,19 +55,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Program.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Program.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Program.cs",
+              "RelativeToolTip": "AdminDashboard\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T10:51:57.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\appsettings.json",
+              "RelativeDocumentMoniker": "AdminDashboard\\appsettings.json",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\appsettings.json",
+              "RelativeToolTip": "AdminDashboard\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-26T10:51:33.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\DBContext\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "AdminDashboard\\Core\\DBContext\\ApplicationDbContext.cs",
               "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\DBContext\\ApplicationDbContext.cs",
               "RelativeToolTip": "AdminDashboard\\Core\\DBContext\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAABkAAAAjAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAABoAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-26T10:44:57.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Project.cs",
               "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\Project.cs",
               "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Business\\Project.cs",
@@ -72,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ApprovalRequest.cs",
               "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\ApprovalRequest.cs",
               "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Business\\ApprovalRequest.cs",
@@ -85,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LeaveRequest.cs",
               "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\LeaveRequest.cs",
               "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Business\\LeaveRequest.cs",
@@ -98,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\Employee.cs",
               "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Business\\Employee.cs",
@@ -111,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Log.cs",
               "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Users\\Log.cs",
               "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Users\\Log.cs",
@@ -124,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Users\\BaseEntity.cs",
               "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Users\\BaseEntity.cs",
@@ -137,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Users\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Users\\ApplicationUser.cs",
