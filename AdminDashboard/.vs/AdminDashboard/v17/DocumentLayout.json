@@ -1,12 +1,156 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\entities\\business\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\entities\\business\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\entities\\business\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\entities\\business\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\entities\\business\\approvalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\entities\\business\\approvalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\entities\\business\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\entities\\business\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\entities\\users\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\entities\\users\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\entities\\users\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\entities\\users\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\entities\\users\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\entities\\users\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\DBContext\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\DBContext\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\DBContext\\ApplicationDbContext.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\DBContext\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAABkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T10:44:57.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\Project.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Business\\Project.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\Project.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\Entities\\Business\\Project.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T10:40:18.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApprovalRequest.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\ApprovalRequest.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Business\\ApprovalRequest.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\ApprovalRequest.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\Entities\\Business\\ApprovalRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T10:37:42.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LeaveRequest.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\LeaveRequest.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Business\\LeaveRequest.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\LeaveRequest.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\Entities\\Business\\LeaveRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T10:35:30.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\Employee.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Business\\Employee.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\Employee.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\Entities\\Business\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T10:31:07.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Log.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Users\\Log.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Users\\Log.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Users\\Log.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\Entities\\Users\\Log.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T12:35:59.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Users\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Users\\BaseEntity.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Users\\BaseEntity.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\Entities\\Users\\BaseEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T12:34:14.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Users\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Users\\ApplicationUser.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Users\\ApplicationUser.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\Entities\\Users\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T12:30:18.897Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

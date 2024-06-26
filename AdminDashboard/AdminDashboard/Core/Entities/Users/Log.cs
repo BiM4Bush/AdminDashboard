@@ -1,4 +1,4 @@
-﻿namespace AdminDashboard.Core.Entities
+﻿namespace AdminDashboard.Core.Entities.Users
 {
     public class Log : BaseEntity<int>
     {
