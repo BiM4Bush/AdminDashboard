@@ -1,6 +1,6 @@
 ﻿namespace AdminDashboard.Core.Constants
 {
-    public class StaticUserRoles
+    public static class StaticUserRoles
     {
         public const string ADMIN = "ADMIN";
         public const string PROJECTMANAGER = "PROJECTMANAGER";
