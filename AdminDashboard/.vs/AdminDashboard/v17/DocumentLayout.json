@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\entities\\business\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\entities\\business\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\services\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\services\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\interfaces\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\core\\entities\\business\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\core\\entities\\business\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|d:\\repozytoria\\admindashoard\\admindashboard\\admindashboard\\admindashboard\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1A8FE8-C1D4-4ACB-B953-23105813067B}|AdminDashboard\\AdminDashboard.csproj|solutionrelative:admindashboard\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LogService.cs",
-              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Services\\LogService.cs",
-              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Services\\LogService.cs",
-              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Services\\LogService.cs",
-              "RelativeToolTip": "AdminDashboard\\Core\\Services\\LogService.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAABEAAAAAAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Program.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Program.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Program.cs",
+              "RelativeToolTip": "AdminDashboard\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T13:26:29.251Z",
+              "WhenOpened": "2024-06-26T13:53:38.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\Interfaces\\IAuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T13:52:47.188Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmployeeService.cs",
-              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Services\\EmployeeService.cs",
-              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Services\\EmployeeService.cs",
-              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Services\\EmployeeService.cs*",
-              "RelativeToolTip": "AdminDashboard\\Core\\Services\\EmployeeService.cs*",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAABEAAAASAAAA",
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\Employee.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Business\\Employee.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\Employee.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\Entities\\Business\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T13:26:04.253Z",
+              "WhenOpened": "2024-06-26T13:52:30.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\Project.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Entities\\Business\\Project.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Entities\\Business\\Project.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\Entities\\Business\\Project.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T13:52:22.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AdminDashboard\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T13:47:42.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Interfaces\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Core\\Interfaces\\IEmployeeService.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Core\\Interfaces\\IEmployeeService.cs",
+              "RelativeToolTip": "AdminDashboard\\Core\\Interfaces\\IEmployeeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T13:42:35.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "AdminDashboard\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\Repozytoria\\AdminDashoard\\AdminDashboard\\AdminDashboard\\AdminDashboard\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "AdminDashboard\\Controllers\\EmployeesController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAAF8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T13:42:07.241Z",
               "EditorCaption": ""
             }
           ]
