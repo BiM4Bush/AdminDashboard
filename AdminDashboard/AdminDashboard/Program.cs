@@ -1,4 +1,5 @@
 using AdminDashboard.Core.DBContext;
+using AdminDashboard.Core.Entities.Users;
 using AdminDashboard.Core.Interfaces;
 using AdminDashboard.Core.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -17,20 +18,21 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
-
 //DI
 builder.Services.AddScoped<ILogService, LogService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+
 
 //Identity 
 builder.Services
-    .AddIdentity<IdentityUser, IdentityRole>()
+    .AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
+
+builder.Services.AddAuthentication();
 
 builder.Services.Configure<IdentityOptions>(options =>
 {
