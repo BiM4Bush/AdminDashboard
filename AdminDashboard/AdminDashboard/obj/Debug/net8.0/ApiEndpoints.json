@@ -303,8 +303,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "employee",
-        "Type": "AdminDashboard.Core.Entities.Business.Employee",
+        "Name": "employeeDto",
+        "Type": "AdminDashboard.Core.Dtos.Employee.EmployeeDto",
         "IsRequired": true
       }
     ],
@@ -486,8 +486,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "leaveRequest",
-        "Type": "AdminDashboard.Core.Entities.Business.LeaveRequest",
+        "Name": "leaveRequestDto",
+        "Type": "AdminDashboard.Core.Dtos.LeaveRequest.LeaveRequestDto",
         "IsRequired": true
       }
     ],
@@ -662,8 +662,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "project",
-        "Type": "AdminDashboard.Core.Entities.Business.Project",
+        "Name": "projectDto",
+        "Type": "AdminDashboard.Core.Dtos.Project.ProjectDto",
         "IsRequired": true
       }
     ],
