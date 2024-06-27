@@ -1,4 +1,5 @@
 ﻿using AdminDashboard.Core.Constants;
+using AdminDashboard.Core.Dtos.Employee;
 using AdminDashboard.Core.Entities.Business;
 using AdminDashboard.Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -48,9 +49,9 @@ namespace AdminDashboard.Controllers
 
         [HttpPost]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.HRMANAGER}")]
-        public async Task<ActionResult> AddEmployee(Employee employee)
+        public async Task<ActionResult> AddEmployee([FromBody] EmployeeDto employeeDto)
         {
-            await _employeeService.AddEmployeeAsync(employee);
+            await _employeeService.AddEmployeeAsync(employeeDto);
             return Ok();
         }
 
@@ -63,7 +64,7 @@ namespace AdminDashboard.Controllers
                 return BadRequest();
             }
 
-            await _employeeService.UpdateEmployeeAsync(employee);
+            await _employeeService.UpdateEmployeeAsync(id, employee);
             return Ok();
         }
 
