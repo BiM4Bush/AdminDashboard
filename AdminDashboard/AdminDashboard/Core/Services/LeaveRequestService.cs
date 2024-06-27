@@ -1,4 +1,5 @@
 ﻿using AdminDashboard.Core.DBContext;
+using AdminDashboard.Core.Dtos.LeaveRequest;
 using AdminDashboard.Core.Entities.Business;
 using AdminDashboard.Core.Interfaces;
 
@@ -23,8 +24,19 @@ namespace AdminDashboard.Core.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task CreateLeaveRequestAsync(LeaveRequest leaveRequest)
+        public async Task CreateLeaveRequestAsync(LeaveRequestDto leaveRequestDto)
         {
+            LeaveRequest leaveRequest = new LeaveRequest()
+            {
+                Employee = leaveRequestDto.Employee,
+                EmployeeId = leaveRequestDto.Employee.Id,
+                AbscenseReason = leaveRequestDto.AbscenseReason,
+                StartDate = leaveRequestDto.StartDate,
+                EndDate = leaveRequestDto.EndDate,
+                Comment = leaveRequestDto.Comment,
+                Status = leaveRequestDto.Status,
+            };
+
             await _context.LeaveRequests.AddAsync(leaveRequest);
             await _context.SaveChangesAsync();
         }

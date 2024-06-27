@@ -1,4 +1,5 @@
 ﻿using AdminDashboard.Core.Constants;
+using AdminDashboard.Core.Dtos.Project;
 using AdminDashboard.Core.Entities.Business;
 using AdminDashboard.Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -48,9 +49,9 @@ namespace AdminDashboard.Controllers
 
         [HttpPost]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER}")]
-        public async Task<ActionResult> CreateProject(Project project)
+        public async Task<ActionResult> CreateProject([FromBody] ProjectDto projectDto)
         {
-            await _projectService.CreateProjectAsync(project);
+            await _projectService.CreateProjectAsync(projectDto);
             return Ok();
         }
 

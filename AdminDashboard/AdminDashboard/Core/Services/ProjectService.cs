@@ -1,4 +1,5 @@
 ﻿using AdminDashboard.Core.DBContext;
+using AdminDashboard.Core.Dtos.Project;
 using AdminDashboard.Core.Entities.Business;
 using AdminDashboard.Core.Interfaces;
 
@@ -23,8 +24,18 @@ namespace AdminDashboard.Core.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task CreateProjectAsync(Project project)
+        public async Task CreateProjectAsync(ProjectDto projectdto)
         {
+            Project project = new Project()
+            {
+                ProjectType = projectdto.ProjectType,
+                StartDate = projectdto.StartDate,
+                EndDate = projectdto.EndDate,
+                ProjectManager = projectdto.ProjectManager,
+                ProjectManagerId = projectdto.ProjectManager.Id,
+                Comment = projectdto.Comment,
+                Status = projectdto.Status
+            };
             await _context.Projects.AddAsync(project);
             await _context.SaveChangesAsync();
         }

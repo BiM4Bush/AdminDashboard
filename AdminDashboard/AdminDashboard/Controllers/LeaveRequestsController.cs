@@ -1,4 +1,5 @@
 ﻿using AdminDashboard.Core.Constants;
+using AdminDashboard.Core.Dtos.LeaveRequest;
 using AdminDashboard.Core.Entities.Business;
 using AdminDashboard.Core.Interfaces;
 using AdminDashboard.Core.Services;
@@ -50,9 +51,9 @@ namespace AdminDashboard.Controllers
 
         [HttpPost]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.EMPLOYEE}")]
-        public async Task<ActionResult> CreateLeaveRequest(LeaveRequest leaveRequest)
+        public async Task<ActionResult> CreateLeaveRequest([FromBody] LeaveRequestDto leaveRequestDto)
         {
-            await _leaveRequestService.CreateLeaveRequestAsync(leaveRequest);
+            await _leaveRequestService.CreateLeaveRequestAsync(leaveRequestDto);
             return Ok();
         }
 

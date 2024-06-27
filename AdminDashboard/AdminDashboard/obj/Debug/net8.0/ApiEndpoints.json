@@ -1,5 +1,140 @@
 [
   {
+    "ContainingType": "AdminDashboard.Controllers.ApprovalRequestsController",
+    "Method": "GetApprovalRequestDetails",
+    "RelativePath": "api/ApprovalRequests/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AdminDashboard.Core.Entities.Business.ApprovalRequest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ApprovalRequestsController",
+    "Method": "ApproveRequest",
+    "RelativePath": "api/ApprovalRequests/{id}/approve",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AdminDashboard.Core.Entities.Business.ApprovalRequest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ApprovalRequestsController",
+    "Method": "RejectRequest",
+    "RelativePath": "api/ApprovalRequests/{id}/reject",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AdminDashboard.Core.Entities.Business.ApprovalRequest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ApprovalRequestsController",
+    "Method": "FilterApprovalRequests",
+    "RelativePath": "api/ApprovalRequests/filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filterBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "filterValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.ApprovalRequest, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ApprovalRequestsController",
+    "Method": "SortApprovalRequests",
+    "RelativePath": "api/ApprovalRequests/sort",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.ApprovalRequest, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "AdminDashboard.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
@@ -343,6 +478,142 @@
     ]
   },
   {
+    "ContainingType": "AdminDashboard.Controllers.LeaveRequestsController",
+    "Method": "CreateLeaveRequest",
+    "RelativePath": "api/LeaveRequests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "leaveRequest",
+        "Type": "AdminDashboard.Core.Entities.Business.LeaveRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.LeaveRequestsController",
+    "Method": "GetLeaveRequestDetails",
+    "RelativePath": "api/LeaveRequests/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AdminDashboard.Core.Entities.Business.LeaveRequest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.LeaveRequestsController",
+    "Method": "UpdateLeaveRequest",
+    "RelativePath": "api/LeaveRequests/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "leaveRequest",
+        "Type": "AdminDashboard.Core.Entities.Business.LeaveRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.LeaveRequestsController",
+    "Method": "ChangeStatusToCancel",
+    "RelativePath": "api/LeaveRequests/{id}/cancel",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.LeaveRequestsController",
+    "Method": "FilterLeaveRequests",
+    "RelativePath": "api/LeaveRequests/filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filterBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "filterValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.LeaveRequest, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.LeaveRequestsController",
+    "Method": "SortLeaveRequests",
+    "RelativePath": "api/LeaveRequests/sort",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.LeaveRequest, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "AdminDashboard.Controllers.LogsController",
     "Method": "GetLogs",
     "RelativePath": "api/Logs",
@@ -373,6 +644,142 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Dtos.Log.GetLogDto, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ProjectsController",
+    "Method": "CreateProject",
+    "RelativePath": "api/Projects",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "project",
+        "Type": "AdminDashboard.Core.Entities.Business.Project",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ProjectsController",
+    "Method": "GetProjectDetails",
+    "RelativePath": "api/Projects/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AdminDashboard.Core.Entities.Business.Project",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ProjectsController",
+    "Method": "UpdateProject",
+    "RelativePath": "api/Projects/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "project",
+        "Type": "AdminDashboard.Core.Entities.Business.Project",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ProjectsController",
+    "Method": "ChangeStatusToDeactivated",
+    "RelativePath": "api/Projects/{id}/deactivate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ProjectsController",
+    "Method": "FilterProjects",
+    "RelativePath": "api/Projects/filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filterBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "filterValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.Project, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ProjectsController",
+    "Method": "SortProjects",
+    "RelativePath": "api/Projects/sort",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.Project, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

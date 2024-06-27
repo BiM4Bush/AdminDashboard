@@ -1,4 +1,5 @@
-﻿using AdminDashboard.Core.Entities.Business;
+﻿using AdminDashboard.Core.Dtos.Project;
+using AdminDashboard.Core.Entities.Business;
 
 namespace AdminDashboard.Core.Interfaces
 {
@@ -7,7 +8,7 @@ namespace AdminDashboard.Core.Interfaces
         Task<IEnumerable<Project>> SortProjectsAsync(string sortBy);
         Task<IEnumerable<Project>> FilterProjectsAsync(string filterBy, string filterValue);
         Task<Project> GetProjectDetailsAsync(int id);
-        Task CreateProjectAsync(Project project);
+        Task CreateProjectAsync(ProjectDto projectDto);
         Task UpdateProjectAsync(int id, Project project);
         Task ChangeStatusToDeactivatedAsync(int id);
     }

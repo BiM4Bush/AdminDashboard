@@ -1,4 +1,5 @@
 ﻿using AdminDashboard.Core.DBContext;
+using AdminDashboard.Core.Dtos.Employee;
 using AdminDashboard.Core.Entities.Business;
 using AdminDashboard.Core.Interfaces;
 
@@ -13,15 +14,35 @@ namespace AdminDashboard.Core.Services
             _context = context;
         }
 
-        public async Task AddEmployeeAsync(Employee employee)
+        public async Task AddEmployeeAsync(EmployeeDto employeeDto)
         {
+            Employee employee = new Employee()
+            {
+                FullName = employeeDto.FullName,
+                Subdivision = employeeDto.Subdivision,
+                Position = employeeDto.Position,
+                Status = employeeDto.Status,
+                PeoplePartner = employeeDto.PeoplePartner,
+                PeoplePartnerId = employeeDto.PeoplePartner.Id,
+                OutOfOfficeBalance = employeeDto.OutOfOfficeBalance,
+                Photo = employeeDto.Photo
+            };
             await _context.Employees.AddAsync(employee);
             await _context.SaveChangesAsync();
         }
 
-        public Task AssignEmployeeToProjectAsync(int employeeId, int projectId)
+        public async Task AssignEmployeeToProjectAsync(int employeeId, int projectId)
         {
-            throw new NotImplementedException();
+            var employee = _context.Employees.FirstOrDefault(x => x.Id == employeeId);
+            if (employee != null)
+            {
+                var project = _context.Projects.FirstOrDefault(x => x.Id == projectId);
+                if (project != null)
+                {
+                    project.ProjectManager = employee;
+                    project.ProjectManagerId = employee.Id;
+                }
+            }
         }
 
         public async Task DeactivateEmployeeAsync(int employeeId)
@@ -76,9 +97,9 @@ namespace AdminDashboard.Core.Services
             }
         }
 
-        public async Task UpdateEmployeeAsync(Employee employee)
+        public async Task UpdateEmployeeAsync(int id, Employee employee)
         {
-            var existingEmployee = _context.Employees.FirstOrDefault(e => e.Id == employee.Id);
+            var existingEmployee = _context.Employees.FirstOrDefault(e => e.Id == id);
             if (existingEmployee != null)
             {
                 existingEmployee.FullName = employee.FullName;
