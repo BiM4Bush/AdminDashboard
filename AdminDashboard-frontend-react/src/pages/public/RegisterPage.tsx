@@ -59,8 +59,6 @@ const RegisterPage = () => {
 
   return (
     <div className='pageTemplate1'>
-     
-      {/* <div>Right</div> */}
       <form
         onSubmit={handleSubmit(onSubmitRegisterForm)}
         className='flex-1 min-h-[600px] h-4/5 bg-[#f0ecf7] flex flex-col justify-center items-center rounded-r-2xl'
