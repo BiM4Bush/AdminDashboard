@@ -68,6 +68,6 @@ export interface IRegisterDto {
   export enum RolesEnum {
     ADMIN = 'ADMIN',
     PROJECTMANAGER = 'PROJECTMANAGER',
-    HRANAGER = 'HRMANAGER',
+    HRMANAGER = 'HRMANAGER',
     EMPLOYEE = 'EMPLOYEE',
   }
