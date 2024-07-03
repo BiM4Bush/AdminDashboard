@@ -13,7 +13,7 @@ namespace AdminDashboard.Core.Dtos.Project
 
         public DateTime? EndDate { get; set; }
 
-        public Entities.Business.Employee ProjectManager { get; set; }
+        public Entities.Business.Employee? ProjectManager { get; set; }
 
         public string Comment { get; set; }
 

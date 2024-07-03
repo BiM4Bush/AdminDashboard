@@ -10,11 +10,11 @@ namespace AdminDashboard.Core.Entities.Business
 
         [ForeignKey("Approver")]
         public int ApproverId { get; set; }
-        public Employee Approver { get; set; }
+        public Employee? Approver { get; set; }
 
         [ForeignKey("LeaveRequest")]
         public int LeaveRequestId { get; set; }
-        public LeaveRequest LeaveRequest { get; set; }
+        public LeaveRequest? LeaveRequest { get; set; }
 
         [Required]
         public string Status { get; set; } = "New";

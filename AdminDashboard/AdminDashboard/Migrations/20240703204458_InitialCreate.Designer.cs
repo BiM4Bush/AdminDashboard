@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AdminDashboard.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240626105541_InitialCreate")]
+    [Migration("20240703204458_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -113,7 +113,7 @@ namespace AdminDashboard.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("EmployeeId")
+                    b.Property<int?>("EmployeeId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("EndDate")
@@ -148,7 +148,7 @@ namespace AdminDashboard.Migrations
                     b.Property<DateTime?>("EndDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ProjectManagerId")
+                    b.Property<int?>("ProjectManagerId")
                         .HasColumnType("int");
 
                     b.Property<string>("ProjectType")
@@ -442,9 +442,7 @@ namespace AdminDashboard.Migrations
                 {
                     b.HasOne("AdminDashboard.Core.Entities.Business.Employee", "Employee")
                         .WithMany()
-                        .HasForeignKey("EmployeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("EmployeeId");
 
                     b.Navigation("Employee");
                 });
@@ -453,9 +451,7 @@ namespace AdminDashboard.Migrations
                 {
                     b.HasOne("AdminDashboard.Core.Entities.Business.Employee", "ProjectManager")
                         .WithMany()
-                        .HasForeignKey("ProjectManagerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ProjectManagerId");
 
                     b.Navigation("ProjectManager");
                 });
