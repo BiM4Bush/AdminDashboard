@@ -11,7 +11,6 @@ import {
 import axiosInstance from "../../utils/axiosInstance";
 import {
   IApproveRequest,
-  IApproveRequestDto,
 } from "../../types/approve-request.type";
 
 const ApprovalRequestsPage: React.FC = () => {
@@ -21,36 +20,7 @@ const ApprovalRequestsPage: React.FC = () => {
   const [sortBy, setSortBy] = useState<string>("");
   const [filterBy, setFilterBy] = useState<string>("");
   const [filterValue, setFilterValue] = useState<string>("");
-  const [showAddForm, setShowAddForm] = useState<boolean>(false);
-  const [newApproveRequest, setNewApproveRequest] = useState<IApproveRequestDto>({
-    approver: {
-      fullName: "",
-      subdivision: "",
-      position: "",
-      status: "",
-      peoplePartner: async () => {},
-      outOfOfficeBalance: 0,
-      photo: new Uint8Array(),
-    },
-    leaveRequest: {
-      employee: {
-        fullName: "",
-        subdivision: "",
-        position: "",
-        status: "",
-        peoplePartner: async () => {},
-        outOfOfficeBalance: 0,
-        photo: new Uint8Array(),
-      },
-      abscenseReason: "",
-      startDate: new Date(),
-      endDate: new Date(),
-      comment: "",
-      status: "",
-    },
-    status: '',
-    comments: ''
-  });
+
 
   useEffect(() => {
     fetchApproveRequests();
@@ -131,7 +101,6 @@ const ApprovalRequestsPage: React.FC = () => {
           />
           <Button label='Filter' onClick={fetchApproveRequests} type='button' variant='secondary' />
         </div>
-        <Button label='Add' onClick={() => setShowAddForm(true)} type='button' variant='primary' />
       </div>
       <div className='grid grid-cols-8 px-2 my-1 text-lg font-semibold border border-gray-300 rounded-md'>
         <div>No</div>
