@@ -4,7 +4,7 @@ namespace AdminDashboard.Core.Dtos.LeaveRequest
 {
     public class LeaveRequestDto
     {
-        public Entities.Business.Employee Employee { get; set; }
+        public Entities.Business.Employee? Employee { get; set; }
 
         [Required(ErrorMessage = "AbscenseReason is required")]
         public string AbscenseReason { get; set; }

@@ -17,8 +17,8 @@ namespace AdminDashboard.Core.Entities.Business
         public DateTime? EndDate { get; set; }
 
         [ForeignKey("ProjectManager")]
-        public int ProjectManagerId { get; set; }
-        public Employee ProjectManager { get; set; }
+        public int? ProjectManagerId { get; set; }
+        public Employee? ProjectManager { get; set; }
 
         public string Comment { get; set; }
 
