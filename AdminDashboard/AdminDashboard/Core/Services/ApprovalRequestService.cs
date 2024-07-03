@@ -1,6 +1,7 @@
 ﻿using AdminDashboard.Core.DBContext;
 using AdminDashboard.Core.Entities.Business;
 using AdminDashboard.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace AdminDashboard.Core.Services
 {
@@ -67,6 +68,11 @@ namespace AdminDashboard.Core.Services
                 default:
                     return _context.ApprovalRequests.OrderBy(ar => ar.Id);
             }
+        }
+
+        public async Task<IEnumerable<ApprovalRequest>> GetAllApprovalRequestsAsync()
+        {
+            return await _context.ApprovalRequests.ToListAsync();
         }
     }
 }

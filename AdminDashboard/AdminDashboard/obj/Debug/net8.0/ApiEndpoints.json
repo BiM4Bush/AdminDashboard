@@ -1,6 +1,26 @@
 [
   {
     "ContainingType": "AdminDashboard.Controllers.ApprovalRequestsController",
+    "Method": "GetApprovalRequestsList",
+    "RelativePath": "api/ApprovalRequests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.ApprovalRequest, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ApprovalRequestsController",
     "Method": "GetApprovalRequestDetails",
     "RelativePath": "api/ApprovalRequests/{id}",
     "HttpMethod": "GET",
@@ -296,6 +316,26 @@
   },
   {
     "ContainingType": "AdminDashboard.Controllers.EmployeesController",
+    "Method": "GetEmployeesList",
+    "RelativePath": "api/Employees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.Employee, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.EmployeesController",
     "Method": "AddEmployee",
     "RelativePath": "api/Employees",
     "HttpMethod": "POST",
@@ -447,6 +487,26 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.Employee, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.LeaveRequestsController",
+    "Method": "GetLeaveRequestsList",
+    "RelativePath": "api/LeaveRequests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.LeaveRequest, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -623,6 +683,26 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Dtos.Log.GetLogDto, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AdminDashboard.Controllers.ProjectsController",
+    "Method": "GetAllProjects",
+    "RelativePath": "api/Projects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.Project, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

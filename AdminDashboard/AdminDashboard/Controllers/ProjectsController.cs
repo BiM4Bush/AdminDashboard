@@ -19,6 +19,14 @@ namespace AdminDashboard.Controllers
             _projectService = projectService;
         }
 
+        [HttpGet]
+        [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER}, {StaticUserRoles.HRMANAGER}")]
+        public async Task<ActionResult<IEnumerable<Project>>> GetAllProjects()
+        {
+            var projectsList = await _projectService.GetAllProjectsAsync();
+            return Ok(projectsList);
+        }
+
         [HttpGet("sort")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER}, {StaticUserRoles.HRMANAGER}")]
         public async Task<ActionResult<IEnumerable<Project>>> SortProjects(string sortBy)

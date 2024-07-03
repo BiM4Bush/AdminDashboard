@@ -19,6 +19,14 @@ namespace AdminDashboard.Controllers
             _approvalRequestService = approvalRequestService;
         }
 
+        [HttpGet]
+        [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER},{StaticUserRoles.HRMANAGER}")]
+        public async Task<ActionResult<IEnumerable<ApprovalRequest>>> GetApprovalRequestsList()
+        {
+            var approvalRequestsList = await _approvalRequestService.GetAllApprovalRequestsAsync();
+            return Ok(approvalRequestsList);
+        }
+
         [HttpGet("sort")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER},{StaticUserRoles.HRMANAGER}")]
         public async Task<ActionResult<IEnumerable<ApprovalRequest>>> SortApprovalRequests(string sortBy)
