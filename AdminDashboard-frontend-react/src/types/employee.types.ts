@@ -14,3 +14,8 @@ export interface IEmployeeDto {
   outOfOfficeBalance: number;
   photo: Uint8Array;
 }
+
+export interface IEmployee extends IEmployeeDto {
+  id: number;
+  createdAt: string;
+}

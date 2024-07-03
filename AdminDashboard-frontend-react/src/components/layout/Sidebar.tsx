@@ -41,8 +41,8 @@ const Sidebar = () => {
         variant="secondary"
       />
       <Button
-        label="Approval requests"
-        onClick={() => handleClick(PATH_DASHBOARD.approvalRequest)}
+        label="Leave requests"
+        onClick={() => handleClick(PATH_DASHBOARD.leaveRequests)}
         type="button"
         variant="secondary"
       />

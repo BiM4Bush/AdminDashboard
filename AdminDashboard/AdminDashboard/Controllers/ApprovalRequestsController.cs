@@ -46,7 +46,7 @@ namespace AdminDashboard.Controllers
             }
             return Ok(approvalRequest);
         }
-        [HttpPut("{id}/approve")]
+        [HttpPut("approve/{id}")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER},{StaticUserRoles.HRMANAGER}")]
         public async Task<ActionResult<ApprovalRequest>> ApproveRequest(int id)
         {
@@ -54,7 +54,7 @@ namespace AdminDashboard.Controllers
             return Ok();
         }
 
-        [HttpPut("{id}/reject")]
+        [HttpPut("reject/{id}")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER},{StaticUserRoles.HRMANAGER}")]
         public async Task<ActionResult<ApprovalRequest>> RejectRequest(int id)
         {

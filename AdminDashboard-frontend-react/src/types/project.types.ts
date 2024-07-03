@@ -13,3 +13,8 @@ export interface IProjectDto {
   comment: string;
   status: string;
 }
+
+export interface IProject extends IProjectDto {
+  id: number;
+  createdAt: string;
+}
