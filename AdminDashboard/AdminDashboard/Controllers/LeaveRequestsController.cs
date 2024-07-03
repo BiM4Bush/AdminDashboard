@@ -70,7 +70,7 @@ namespace AdminDashboard.Controllers
             return NoContent();
         }
 
-        [HttpPut("{id}/cancel")]
+        [HttpPut("cancel/{id}")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.EMPLOYEE}")]
         public async Task<ActionResult> ChangeStatusToCancel(int id)
         {

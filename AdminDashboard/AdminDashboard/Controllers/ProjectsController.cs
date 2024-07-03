@@ -68,7 +68,7 @@ namespace AdminDashboard.Controllers
             return Ok();
         }
 
-        [HttpPut("{id}/deactivate")]
+        [HttpPut("deactivate/{id}")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER}")]
         public async Task<ActionResult> ChangeStatusToDeactivated(int id)
         {

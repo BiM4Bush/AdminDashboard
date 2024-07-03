@@ -55,7 +55,7 @@ namespace AdminDashboard.Controllers
             return Ok();
         }
 
-        [HttpPut("{id}/update")]
+        [HttpPut("{id}")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.HRMANAGER}")]
         public async Task<ActionResult> UpdateEmployee(int id, Employee employee)
         {
@@ -68,7 +68,7 @@ namespace AdminDashboard.Controllers
             return Ok();
         }
 
-        [HttpPut("{id}/deactivate")]
+        [HttpPut("deactivate/{id}")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.HRMANAGER}")]
         public async Task<ActionResult> DeactivateEmployee(int id)
         {
@@ -88,7 +88,7 @@ namespace AdminDashboard.Controllers
             return Ok(employee);
         }
 
-        [HttpPut("{id}/assignProject")]
+        [HttpPut("/assignProject/{id}")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER}")]
         public async Task<ActionResult> AssignEmployeeToProject(int id, int projectId)
         {

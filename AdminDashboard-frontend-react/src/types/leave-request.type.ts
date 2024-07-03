@@ -1,15 +1,16 @@
+import { IEmployeeDto } from "../types/employee.types";
+
 export interface ILeaveRequestDto {
-  employee: (
-    fullName: string,
-    subdivision: string,
-    position: string,
-    status: string,
-    outOfOfficeBalance: number,
-    photo: Uint8Array
-  ) => Promise<void>;
+  employee: IEmployeeDto;
   abscenseReason: string;
   startDate: Date;
   endDate: Date;
-  commment: string;
+  comment: string;
   status: string;
+}
+
+
+export interface ILeaveRequest extends ILeaveRequestDto {
+  id: number;
+  createdAt: string;
 }
