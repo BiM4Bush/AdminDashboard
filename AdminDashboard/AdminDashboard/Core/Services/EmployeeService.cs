@@ -2,6 +2,7 @@
 using AdminDashboard.Core.Dtos.Employee;
 using AdminDashboard.Core.Entities.Business;
 using AdminDashboard.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace AdminDashboard.Core.Services
 {
@@ -68,6 +69,11 @@ namespace AdminDashboard.Core.Services
                 default:
                     return _context.Employees;
             }
+        }
+
+        public async Task<IEnumerable<Employee>> GetAllEmployeesAsync()
+        {
+            return await _context.Employees.ToListAsync();
         }
 
         public async Task<Employee> GetEmployeeByNameAsync(string fullName)

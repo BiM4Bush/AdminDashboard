@@ -2,6 +2,7 @@
 using AdminDashboard.Core.Dtos.Project;
 using AdminDashboard.Core.Entities.Business;
 using AdminDashboard.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace AdminDashboard.Core.Services
 {
@@ -94,6 +95,11 @@ namespace AdminDashboard.Core.Services
                 existingProject.Status = project.Status;
             }
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<Project>> GetAllProjectsAsync()
+        {
+            return await _context.Projects.ToListAsync();
         }
     }
 }

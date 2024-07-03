@@ -20,6 +20,14 @@ namespace AdminDashboard.Controllers
             _leaveRequestService = leaveRequestService;
         }
 
+        [HttpGet]
+        [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER},{StaticUserRoles.HRMANAGER}, {StaticUserRoles.EMPLOYEE}")]
+        public async Task<ActionResult<IEnumerable<LeaveRequest>>> GetLeaveRequestsList()
+        {
+            var leaveRequestsList = await _leaveRequestService.GetAllLeaveRequestsAsync();
+            return Ok(leaveRequestsList);
+        }
+
         [HttpGet("sort")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER},{StaticUserRoles.HRMANAGER}, {StaticUserRoles.EMPLOYEE}")]
         public async Task<ActionResult<IEnumerable<LeaveRequest>>> SortLeaveRequests(string sortBy)

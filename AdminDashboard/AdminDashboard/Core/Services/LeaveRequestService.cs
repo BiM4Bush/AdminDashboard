@@ -2,6 +2,7 @@
 using AdminDashboard.Core.Dtos.LeaveRequest;
 using AdminDashboard.Core.Entities.Business;
 using AdminDashboard.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace AdminDashboard.Core.Services
 {
@@ -89,6 +90,11 @@ namespace AdminDashboard.Core.Services
                 existingLeaveRequest.Status = leaveRequest.Status;
             }
             _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<LeaveRequest>> GetAllLeaveRequestsAsync()
+        {
+            return await _context.LeaveRequests.ToListAsync();
         }
     }
 }

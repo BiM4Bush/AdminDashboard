@@ -5,6 +5,7 @@ namespace AdminDashboard.Core.Interfaces
 {
     public interface IEmployeeService
     {
+        Task<IEnumerable<Employee>> GetAllEmployeesAsync();
         Task<IEnumerable<Employee>> SortEmployeesAsync(string sortBy);
         Task<IEnumerable<Employee>> FilterEmployeesAsync(string filterBy, string filterValue);
         Task<Employee> GetEmployeeByNameAsync(string fullName);

@@ -18,6 +18,13 @@ namespace AdminDashboard.Controllers
         {
             _employeeService = employeeService;
         }
+        [HttpGet]
+        [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER},{StaticUserRoles.HRMANAGER}")]
+        public async Task<ActionResult<IEnumerable<Employee>>> GetEmployeesList()
+        {
+            var employeesList = await _employeeService.GetAllEmployeesAsync();
+            return Ok(employeesList);
+        }
 
         [HttpGet("sort")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER},{StaticUserRoles.HRMANAGER}")]

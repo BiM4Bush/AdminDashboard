@@ -4,6 +4,7 @@ namespace AdminDashboard.Core.Interfaces
 {
     public interface IApprovalRequestService
     {
+        Task<IEnumerable<ApprovalRequest>> GetAllApprovalRequestsAsync();
         Task<IEnumerable<ApprovalRequest>> SortEmployeesAsync(string sortBy);
         Task<IEnumerable<ApprovalRequest>> FilterEmployeesAsync(string filterBy, string filterValue);
         Task<ApprovalRequest> GetApprovalRequestByNumberAsync(int approvalRequestId);
