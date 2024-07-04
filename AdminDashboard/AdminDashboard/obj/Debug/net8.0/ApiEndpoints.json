@@ -343,9 +343,119 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "employeeDto",
-        "Type": "AdminDashboard.Core.Dtos.Employee.EmployeeDto",
-        "IsRequired": true
+        "Name": "FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Subdivision",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Position",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.Subdivision",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.Position",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartnerId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.Subdivision",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.Position",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.PeoplePartnerId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.PeoplePartner",
+        "Type": "AdminDashboard.Core.Entities.Business.Employee",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.OutOfOfficeBalance",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.Photo",
+        "Type": "System.Byte[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.OutOfOfficeBalance",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.Photo",
+        "Type": "System.Byte[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "OutOfOfficeBalance",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Photo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -364,9 +474,119 @@
         "IsRequired": true
       },
       {
-        "Name": "employee",
+        "Name": "FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Subdivision",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Position",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.Subdivision",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.Position",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartnerId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.Subdivision",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.Position",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.Status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.PeoplePartnerId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.PeoplePartner",
         "Type": "AdminDashboard.Core.Entities.Business.Employee",
-        "IsRequired": true
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.OutOfOfficeBalance",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.PeoplePartner.Photo",
+        "Type": "System.Byte[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.OutOfOfficeBalance",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "PeoplePartner.Photo",
+        "Type": "System.Byte[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "OutOfOfficeBalance",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Photo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -460,7 +680,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "AdminDashboard.Core.Entities.Business.Employee",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AdminDashboard.Core.Entities.Business.Employee, AdminDashboard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

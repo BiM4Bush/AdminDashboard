@@ -24,9 +24,8 @@ namespace AdminDashboard.Core.Services
                 Position = employeeDto.Position,
                 Status = employeeDto.Status,
                 PeoplePartner = employeeDto.PeoplePartner,
-                PeoplePartnerId = employeeDto.PeoplePartner.Id,
                 OutOfOfficeBalance = employeeDto.OutOfOfficeBalance,
-                Photo = employeeDto.Photo
+                Photo = ConvertIFormFileToByteArray(employeeDto.Photo)
             };
             await _context.Employees.AddAsync(employee);
             await _context.SaveChangesAsync();
@@ -49,7 +48,7 @@ namespace AdminDashboard.Core.Services
         public async Task DeactivateEmployeeAsync(int employeeId)
         {
             var employee = _context.Employees.FirstOrDefault(e => e.Id == employeeId);
-            if (employee == null)
+            if (employee != null)
             {
                 employee.Status = "Deactivated";
                 await _context.SaveChangesAsync();
@@ -76,9 +75,9 @@ namespace AdminDashboard.Core.Services
             return await _context.Employees.ToListAsync();
         }
 
-        public async Task<Employee> GetEmployeeByNameAsync(string fullName)
+        public async Task<IEnumerable<Employee>> GetEmployeeByNameAsync(string fullName)
         {
-            return _context.Employees.FirstOrDefault(e => e.FullName == fullName);
+            return _context.Employees.Where(e => e.FullName == fullName);
         }
 
         public async Task<Employee> GetEmployeeDetailsAsync(int employeeId)
@@ -103,20 +102,33 @@ namespace AdminDashboard.Core.Services
             }
         }
 
-        public async Task UpdateEmployeeAsync(int id, Employee employee)
+        public async Task UpdateEmployeeAsync(int id, EmployeeDto employeeDto)
         {
-            var existingEmployee = _context.Employees.FirstOrDefault(e => e.Id == id);
+            var existingEmployee = await _context.Employees.FindAsync(id);
             if (existingEmployee != null)
             {
-                existingEmployee.FullName = employee.FullName;
-                existingEmployee.Subdivision = employee.Subdivision;
-                existingEmployee.Position = employee.Position;
-                existingEmployee.Status = employee.Status;
-                existingEmployee.PeoplePartnerId = employee.PeoplePartnerId;
-                existingEmployee.OutOfOfficeBalance = employee.OutOfOfficeBalance;
-                existingEmployee.Photo = employee.Photo;
+                existingEmployee.FullName = employeeDto.FullName;
+                existingEmployee.Subdivision = employeeDto.Subdivision;
+                existingEmployee.Position = employeeDto.Position;
+                existingEmployee.Status = employeeDto.Status;
+                existingEmployee.OutOfOfficeBalance = employeeDto.OutOfOfficeBalance;
+
+                // Update photo only if provided in the request
+                if (employeeDto.Photo != null)
+                {
+                    existingEmployee.Photo = ConvertIFormFileToByteArray(employeeDto.Photo);
+                }
             }
             await _context.SaveChangesAsync();
+        }
+
+        private byte[] ConvertIFormFileToByteArray(IFormFile file)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                file.CopyTo(ms);
+                return ms.ToArray();
+            }
         }
     }
 }

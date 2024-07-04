@@ -5,6 +5,7 @@ using AdminDashboard.Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace AdminDashboard.Controllers
 {
@@ -44,7 +45,7 @@ namespace AdminDashboard.Controllers
 
         [HttpGet("search-by-name")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.PROJECTMANAGER},{StaticUserRoles.HRMANAGER}")]
-        public async Task<ActionResult<Employee>> GetEmployeeByName(string fullName)
+        public async Task<ActionResult<IEnumerable<Employee>>> GetEmployeeByName(string fullName)
         {
             var employee = await _employeeService.GetEmployeeByNameAsync(fullName);
             if (employee == null)
@@ -56,7 +57,7 @@ namespace AdminDashboard.Controllers
 
         [HttpPost]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.HRMANAGER}")]
-        public async Task<ActionResult> AddEmployee([FromBody] EmployeeDto employeeDto)
+        public async Task<ActionResult> AddEmployee([FromForm] EmployeeDto employeeDto)
         {
             await _employeeService.AddEmployeeAsync(employeeDto);
             return Ok();
@@ -64,14 +65,9 @@ namespace AdminDashboard.Controllers
 
         [HttpPut("{id}")]
         [Authorize(Roles = $"{StaticUserRoles.ADMIN},{StaticUserRoles.HRMANAGER}")]
-        public async Task<ActionResult> UpdateEmployee(int id, Employee employee)
+        public async Task<ActionResult> UpdateEmployee(int id, [FromForm] EmployeeDto employeeDto)
         {
-            if (id != employee.Id)
-            {
-                return BadRequest();
-            }
-
-            await _employeeService.UpdateEmployeeAsync(id, employee);
+            await _employeeService.UpdateEmployeeAsync(id, employeeDto);
             return Ok();
         }
 

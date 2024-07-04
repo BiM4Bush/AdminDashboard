@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace AdminDashboard.Core.Dtos.Auth
 {
@@ -6,6 +7,8 @@ namespace AdminDashboard.Core.Dtos.Auth
     {
         [Required(ErrorMessage = " UserName is required")]
         public string UserName { get; set; }
+
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public RoleType NewRole { get; set; }
     }
 

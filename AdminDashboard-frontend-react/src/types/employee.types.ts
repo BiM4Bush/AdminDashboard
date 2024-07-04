@@ -12,7 +12,7 @@ export interface IEmployeeDto {
     photo: Uint8Array
   ) => Promise<void>;
   outOfOfficeBalance: number;
-  photo: Uint8Array;
+  photo: File | Uint8Array;
 }
 
 export interface IEmployee extends IEmployeeDto {

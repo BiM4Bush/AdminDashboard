@@ -20,6 +20,6 @@ namespace AdminDashboard.Core.Dtos.Employee
 
         public decimal OutOfOfficeBalance { get; set; }
 
-        public byte[] Photo { get; set; }
+        public IFormFile Photo { get; set; }
     }
 }

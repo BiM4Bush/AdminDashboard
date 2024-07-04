@@ -33,7 +33,6 @@ namespace AdminDashboard.Core.Services
                 StartDate = projectdto.StartDate,
                 EndDate = projectdto.EndDate,
                 ProjectManager = projectdto.ProjectManager,
-                ProjectManagerId = projectdto.ProjectManager.Id,
                 Comment = projectdto.Comment,
                 Status = projectdto.Status
             };

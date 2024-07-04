@@ -8,9 +8,9 @@ namespace AdminDashboard.Core.Interfaces
         Task<IEnumerable<Employee>> GetAllEmployeesAsync();
         Task<IEnumerable<Employee>> SortEmployeesAsync(string sortBy);
         Task<IEnumerable<Employee>> FilterEmployeesAsync(string filterBy, string filterValue);
-        Task<Employee> GetEmployeeByNameAsync(string fullName);
+        Task<IEnumerable<Employee>> GetEmployeeByNameAsync(string fullName);
         Task AddEmployeeAsync(EmployeeDto employeeDto);
-        Task UpdateEmployeeAsync(int id, Employee employee);
+        Task UpdateEmployeeAsync(int id, EmployeeDto employeeDto);
         Task DeactivateEmployeeAsync(int employeeId);
         Task<Employee> GetEmployeeDetailsAsync(int employeeId);
         Task AssignEmployeeToProjectAsync(int employeeId, int projectId);

@@ -17,7 +17,7 @@ export const UPDATE_EMPLOYEE = '/Employees';
 export const DEACTIVATE_EMPLOYEE = '/Employees/deactivate';
 export const SORT_EMPLOYEE = '/Employees/sort';
 export const FILTER_EMPLOYEE = '/Employees/filter';
-export const SERACH_BY_NAME_EMPLOYEE = '/Employees/serach-by-name';
+export const SERACH_BY_NAME_EMPLOYEE = '/Employees/search-by-name';
 export const DETAILS_EMPLOYEE = '/Employees/details';
 export const ASSIGN_EMPLOYEE = '/Employees/assign';
 //URLS Approval Requests
